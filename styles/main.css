@@ -6,8 +6,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #a1d6f7;
+    color: #f9fcff;
     scroll-behavior: smooth;
 }
 html {
@@ -16,10 +16,10 @@ html {
 /* header start */
 header {
     background: #2c92d2;
-    color: #ffffff;
+    color: #f9fcff;
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -78,14 +78,15 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image:  linear-gradient(to bottom, #2c92d279, #06598679), url('../images/randomGames.avif');
+    background-image: linear-gradient(to bottom, #2c92d279, #06598679),
+        url("../images/randomGames.avif");
     background-size: cover;
     background-position: center;
     transition: all 0.3s ease;
     z-index: 0;
     will-change: transform;
 }
-.randomGame:has(.randomGameBtn:hover) .backGround{
+.randomGame:has(.randomGameBtn:hover) .backGround {
     transform: scale(1.1) rotate(3deg);
 }
 .randomGameBtn {

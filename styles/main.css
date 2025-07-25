@@ -68,9 +68,25 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #a1d6f7;
+}
+.randomGame .backGround {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image:  linear-gradient(to bottom, #2c92d279, #06598679), url('../images/randomGames.avif');
     background-size: cover;
     background-position: center;
+    transition: all 0.3s ease;
+    z-index: 0;
+    will-change: transform;
+}
+.randomGame:has(.randomGameBtn:hover) .backGround{
+    transform: scale(1.1) rotate(3deg);
 }
 .randomGameBtn {
     background-color: #2c92d2;
@@ -82,6 +98,7 @@ nav ul li a:hover {
     font-size: 18px;
     transition: background-color 0.3s ease;
     text-transform: capitalize;
+    z-index: 1;
 }
 .randomGameBtn:hover {
     background-color: #1f6f9b;
@@ -147,3 +164,18 @@ nav ul li a:hover {
     border-radius: 10px;
     object-fit: cover;
 }
+/* game list end */
+
+/* footer start */
+footer {
+    background-color: #2c92d2;
+    color: #f9fcff;
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+}
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+/* footer end */

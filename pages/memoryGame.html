@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/memoryGame.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Memory Game</title>
+</head>
+<body>
+    <header>
+        <h1>Memory Game</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#gamesList">Games</a></li>
+                <li><button class="randomGameBtn">Random Game</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="gameContainer">
+            <div class="score">
+                <h1>Memory Game</h1>
+                <p>Score: <span id="score">0</span></p>
+                <p>time: <span id="time">0</span></p>
+            </div>
+            <div class="startButtonCont">
+                <button class="startGameBtn">Start Game</button>
+            </div>
+            <div class="gameBoard" id="gameBoard">
+                <div class="card" data-tech="html5">
+                    <div class="face front">?</div>
+                    <div class="face back"><i class="fa-brands fa-html5"></i></div>
+                </div>
+                <div class="card" data-tech="css3">
+                    <div class="face front">?</div>
+                    <div class="face back"><i class="fa-brands fa-css3-alt"></i></div>
+                </div>
+                <div class="card" data-tech="github">
+                    <div class="face front">?</div>
+                    <div class="face back"><i class="fa-brands fa-github"></i></div>
+                </div>
+                <div class="card" data-tech="nodejs">
+                    <div class="face front">?</div>
+                    <div class="face back"><i class="fa-brands fa-node-js"></i></div>
+                </div>
+                <div class="card" data-tech="react">
+                    <div class="face front">?</div>
+                    <div class="face back"><i class="fa-brands fa-react"></i></div>
+                </div>
+                <div class="card" data-tech="docker">
+                    <div class="face front">?</div>
+                    <div class="face back"><i class="fa-brands fa-angular"></i></div>
+                </div>
+                <div class="card" data-tech="python">
+                    <div class="face front">?</div>
+                    <div class="face back"><i class="fa-brands fa-python"></i></div>
+                </div>
+                <div class="card" data-tech="js">
+                    <div class="face front">?</div>
+                    <div class="face back"><i class="fa-brands fa-js"></i></div>
+                </div>
+                <div class="card" data-tech="react">
+                    <div class="face front">?</div>
+                    <div class="face back"><i class="fa-brands fa-react"></i></div>
+                </div>
+                <div class="card" data-tech="docker">
+                    <div class="face front">?</div>
+                    <div class="face back"><i class="fa-brands fa-angular"></i></div>
+                </div>
+                <div class="card" data-tech="github">
+                    <div class="face front">?</div>
+                    <div class="face back"><i class="fa-brands fa-github"></i></div>
+                </div>
+                <div class="card" data-tech="css3">
+                    <div class="face front">?</div>
+                    <div class="face back"><i class="fa-brands fa-css3-alt"></i></div>
+                </div>
+                <div class="card" data-tech="html5">
+                    <div class="face front">?</div>
+                    <div class="face back"><i class="fa-brands fa-html5"></i></div>
+                </div>
+                <div class="card" data-tech="nodejs">
+                    <div class="face front">?</div>
+                    <div class="face back"><i class="fa-brands fa-node-js"></i></div>
+                </div>
+                <div class="card" data-tech="js">
+                    <div class="face front">?</div>
+                    <div class="face back"><i class="fa-brands fa-js"></i></div>
+                </div>
+                <div class="card" data-tech="python">
+                    <div class="face front">?</div>
+                    <div class="face back"><i class="fa-brands fa-python"></i></div>
+                </div>
+                <div class="card" data-tech="docker">
+                    <div class="face front">?</div>
+                    <div class="face back"><i class="fa-brands fa-docker"></i></div>
+                </div>
+                <div class="card" data-tech="docker">
+                    <div class="face front">?</div>
+                    <div class="face back"><i class="fa-brands fa-docker"></i></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="deta"></span> MohenedDev. All rights reserved.</p>
+    </footer>
+    <script src="../scripts/memoryGame.js"></script>
+</body>
+</html>

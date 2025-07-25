@@ -121,9 +121,9 @@ function winner() {
 
 //random game
 let gamesLinks = [
-    "../pages/aimTest.html",
-    "../pages/memoryGame.html",
-    "../pages/hangMan.html",
+    "./aimTest.html",
+    "./memoryGame.html",
+    "./hangMan.html",
 ];
 let randomGameBtn = document.querySelector(".randomGameBtn");
 randomGameBtn.addEventListener("click", function () {
@@ -134,3 +134,8 @@ randomGameBtn.addEventListener("click", function () {
         500
     );
 });
+
+//deta set
+let deta = document.querySelector("#deta");
+let year = new Date().getFullYear();
+deta.innerText = year;

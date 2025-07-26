@@ -120,6 +120,7 @@ main {
 }
 .startButtonCont {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -130,6 +131,11 @@ main {
     z-index: 999;
     background: linear-gradient(135deg, #4962718b  0%, #545d5f8b 100%);
     backdrop-filter: blur(2px);
+}
+.startButtonCont p {
+    color: #f9fcff;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 .startGameBtn {
     background: #2c92d2;
@@ -162,6 +168,7 @@ main {
     max-width: 900px;
     font-size: 1.2rem;
     letter-spacing: 1px;
+    text-transform: capitalize;
 }
 .score h1 {
     margin: 0;
@@ -195,23 +202,6 @@ main {
     width: 98vw;
     max-width: 900px;
     min-height: 220px;
-}
-#resetGameBtn {
-    background: #2c92d2;
-    color: #f9fcff;
-    font-size: 18px;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    padding: 12px 28px;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(44, 146, 210, 0.1);
-    margin-top: 10px;
-    transition: background 0.3s;
-    text-transform: capitalize;
-}
-#resetGameBtn:hover {
-    background: #1f6f9b;
 }
 .card {
     width: 100%;

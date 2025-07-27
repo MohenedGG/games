@@ -1,9 +1,29 @@
 "use strict";
+
+// Cards mixing
+let cardsMixing = Array.from(document.querySelectorAll(".card"));
+for (let i = cardsMixing.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [cardsMixing[i], cardsMixing[j]] = [cardsMixing[j], cardsMixing[i]];
+}
+
+// Remove old cards frome the page
+let gameBoard = document.querySelector(".gameBoard");
+gameBoard.innerHTML = ``;
+
+// add the mixed cards to the page
+cardsMixing.forEach((card) => gameBoard.append(card));
+
 // Start game
 let started = false;
 document.querySelector(".startGameBtn").addEventListener("click", function () {
     this.parentElement.remove();
-    started = true;
+    // Fliping card before start
+    cardsMixing.forEach(card => card.classList.add("active"));
+    setTimeout(() => {
+        cardsMixing.forEach(card => card.classList.remove("active"));
+        started = true;
+    }, 1500)
 });
 
 let points = 0;
@@ -15,7 +35,7 @@ let canFliping = true;
 let found = [];
 
 // Flip card logic
-document.querySelector(".gameBoard").onclick = (event) => {
+gameBoard.onclick = (event) => {
     let targ = event.target.closest(".card");
 
     if (
@@ -64,7 +84,7 @@ setInterval(() => {
     if (started) {
         timer++;
         timerSpan.innerText = timer;
-        if (timer > 119) lost();
+        if (timer > 59) lost();
     }
 }, 1000);
 
@@ -93,7 +113,7 @@ function lost() {
 }
 
 // Random game
-let gamesLinks = ["./XO.html", "./aimTest.html"/*, "./hangMan.html"*/];
+let gamesLinks = ["./XO.html", "./aimTest.html" /*, "./hangMan.html"*/];
 let randomGameBtn = document.querySelector(".randomGameBtn");
 randomGameBtn.addEventListener("click", function () {
     setTimeout(() => {

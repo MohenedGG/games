@@ -293,6 +293,48 @@ main {
         border-radius: 6px;
     }
 }
+@media (max-width: 550px) {
+    .score {
+        font-size: 0.9rem;
+        padding: 6px 6px;
+    }
+    .score h1 {
+        font-size: 1rem;
+    }
+    .gameBoard {
+        gap: 2px;
+        min-height: 100px;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+    .card {
+        max-width: 40px;
+        max-height: 40px;
+    }
+    .card .face {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 400px) {
+    .score {
+        font-size: 0.8rem;
+        padding: 4px 4px;
+    }
+    .score h1 {
+        font-size: 0.9rem;
+    }
+    .gameBoard {
+        gap: 2px;
+        min-height: 80px;
+            grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    }
+    .card {
+        max-width: 25px;
+        max-height: 25px;
+    }
+    .card .face {
+        font-size: 0.9rem;
+    }
+}
 /* main end */
 
 /* footer start */

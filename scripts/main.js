@@ -3,7 +3,7 @@ let gamesLinks = [
     "./pages/XO.html",
     "./pages/aimTest.html",
     "./pages/memoryGame.html",
-    "./pages/hangMan.html",
+    /*"./pages/hangMan.html",*/
 ];
 let randomGameBtn = document.querySelector(".randomGameBtn");
 randomGameBtn.addEventListener("click", function () {

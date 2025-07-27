@@ -120,11 +120,7 @@ function winner() {
 }
 
 //random game
-let gamesLinks = [
-    "./aimTest.html",
-    "./memoryGame.html",
-    "./hangMan.html",
-];
+let gamesLinks = ["./aimTest.html", "./memoryGame.html" /*, "./hangMan.html"*/];
 let randomGameBtn = document.querySelector(".randomGameBtn");
 randomGameBtn.addEventListener("click", function () {
     setTimeout(

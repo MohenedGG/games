@@ -93,7 +93,7 @@ function lost() {
 }
 
 // Random game
-let gamesLinks = ["./XO.html", "./aimTest.html", "./hangMan.html"];
+let gamesLinks = ["./XO.html", "./aimTest.html"/*, "./hangMan.html"*/];
 let randomGameBtn = document.querySelector(".randomGameBtn");
 randomGameBtn.addEventListener("click", function () {
     setTimeout(() => {

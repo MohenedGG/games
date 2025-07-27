@@ -57,7 +57,7 @@ function showTarget() {
 }
 
 //random game
-let gamesLinks = ["./XO.html", "./memoryGame.html", "./hangMan.html"];
+let gamesLinks = ["./XO.html", "./memoryGame.html"/*, "./hangMan.html"*/];
 let randomGameBtn = document.querySelector(".randomGameBtn");
 randomGameBtn.addEventListener("click", function () {
     setTimeout(

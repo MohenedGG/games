@@ -9,17 +9,29 @@
 </head>
 <body>
     <header>
-        <h1>Memory Game</h1>
+        <h1>aim test game</h1>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../index.html#gamesList">Games</a></li>
-                <li><button class="randomGameBtn">Random Game</button></li>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../index.html#gamesList">games</a></li>
+                <li><button class="randomGameBtn">random game</button></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Soon...</h1>
+        <div class="gameContainer" id="gameContainer">
+            <div class="score">
+                <h1>aim test</h1>
+                <p>score: <span id="score">0</span> | <span id="wrong">0</span></p>
+                <p>time: <span id="timer">0</span></p>
+            </div>
+            <div class="startButtonCont">
+                <button class="startGameBtn">Start Game</button>
+            </div>
+            <div class="gameBoard" id="gameBoard">
+                <div class="target"></div>
+            </div>
+        </div>
     </main>
     <footer>
         <p>© <span id="deta"></span> MohenedDev. All rights reserved.</p>
